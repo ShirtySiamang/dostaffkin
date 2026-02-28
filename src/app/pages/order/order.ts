@@ -56,6 +56,10 @@ export class Order {
         this.routeForm.controls['size'].setValue(size);
     }
 
+    public selectSpeed(speed: string) {
+    this.routeForm.controls['speed'].setValue(speed);
+}
+
     public calculate() {
         this.calculationResult.set(null);
 
@@ -146,6 +150,4 @@ export class Order {
         console.log(payload);
         this.orderId.set(1);
     }
-
-    
 }
